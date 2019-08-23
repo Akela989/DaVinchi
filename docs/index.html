@@ -8,7 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
 </head>
 <body>
 	<header id="header">
@@ -33,13 +35,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
-							<div class="header_article">
+							<div class="header_article wow fadeInLeft">
 								<h1 class="header_article__title">Военные орудия<br>Великого гения</h1>
 								<input type="button" class="header_article__button" value="Выбрать орудие">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12">
-							<div class="article_image">
+							<div class="article_image wow fadeInRight">
 								<img src="img/vehicle_first.png" alt="">
 							</div>
 						</div>
@@ -50,7 +52,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="anchor">
-								<a href="#">
+								<a href="#market">
 									<img src="img/anchor.svg" alt="anchor">
 								</a>									
 							    </div>
@@ -65,8 +67,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="info_description">
-						<h1 class="info_description__title">Leonardo Da Vinci</h1>
-						<p class="info_description__text">Lеонардо ди сер Пьеро да Винчи – человек искусства эпохи Возрождения.Cкульптор,<br>изобретатель, живописец, философ, писатель, ученый, полимат(универсальный человек).<br>
+						<h1 class="info_description__title wow slideInLeft" data-wow-offset="200">Leonardo Da Vinci</h1>
+						<p class="info_description__text wow slideInRight" data-wow-offset="200">Lеонардо ди сер Пьеро да Винчи – человек искусства эпохи Возрождения.Cкульптор,<br>изобретатель, живописец, философ, писатель, ученый, полимат(универсальный человек).<br>
 						<br>Большую часть своей жизни итальянец посвятил инженерным и архитектурным проектам.<br>Его изобретения имели как военный, так и мирный характер. Леонардо известен, как<br> разработчик прототипов танка, летательного аппарата, самодвижущейся повозки, прожектора,<br> катапульты, велосипеда, парашюта, мобильного моста, пулемета.<br>
 					    <br>Здесь представлены его самые удачные "военные разработки"</p>
 					</div>
@@ -80,16 +82,16 @@
 		</div>
 	</section>
 
-	<section class="market">
+	<section class="market" id="market">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="vehicle_icon">
+					<div class="vehicle_icon wow zoomInLeft" data-wow-offset="200">
 						<img src="img/vehicle_second.png" alt="vehicle2">
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="vehicle_description">
+					<div class="vehicle_description wow zoomInRight" data-wow-offset="200">
 						<h3 class="vehicle_description__title">Пулемет</h3>
 						<p class="vehicle_description__text">Орудие, состоит из трех рядов по 11<br>малокалиберных пушек, ряды соединялись<br>в виде треугольной вращающейся платформы,<br>к которой в свою очередь прикреплялись<br>большие колёса</p>
 						<div class="vehicle_statistic">
@@ -108,7 +110,7 @@
 					<div class="vehicle_i">
 						<img src="img/vehicle_third.png" alt="vehicle3">
 					</div>
-					<div class="vehicle_description aa">
+					<div class="vehicle_description aa wow zoomInLeft" data-wow-offset="200">
 						<h3 class="vehicle_description__title">Танк</h3>
 						<p class="vehicle_description__text">Танк Леонардо имел округлую форму,<br> из-за чего напоминал черепаху.<br>Только в отличии от миролюбивого живого<br>пресмыкающегося, разработка гения имела<br>целый арсенал орудий. Ну а передвигаться<br>она должна была при помощи лошадей,<br>которые находились внутри конструкции.</p>
 						<div class="vehicle_statistic">
@@ -134,19 +136,19 @@
 						</div>
                         <button type="button" class="buy_button">Купить</button>
 					</div>
-					<div class="vehicle_icon aa">
+					<div class="vehicle_icon aa wow zoomInRight" data-wow-offset="200">
 						<img src="img/vehicle_third.png" alt="vehicle3">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="vehicle_icon">
+					<div class="vehicle_icon wow zoomInLeft" data-wow-offset="200">
 						<img src="img/vehicle_fourth.png" alt="vehicle4">
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="vehicle_description">
+					<div class="vehicle_description wow zoomInRight" data-wow-offset="200">
 						<h3 class="vehicle_description__title">Эспрингаль</h3>
 						<p class="vehicle_description__text">Получившаяся торсионная машина работала<br>по принципу скрученной резинки. То есть, рычаг<br>приводился в боевое состояние при помощи веревки.<br>В специальный мешок укладывался соответствующий<br>по размеру камень. В момент «икс» натяжение обрывали,<br>и снаряд летел в противника.</p>
 						<div class="vehicle_statistic">
@@ -178,7 +180,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-sm-6">
-			         <div class="advantages">
+			         <div class="advantages wow zoomInUp" data-wow-offset="200" data-wow-delay="0.5s">
 			         	<div class="img_blocks">
 			         		<img src="img/weapons_icon.png" alt="weapons">
 			         	</div>
@@ -186,7 +188,7 @@
 			         </div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
-					 <div class="advantages">
+					 <div class="advantages wow zoomInUp" data-wow-offset="200" data-wow-delay="1s">
 					 	<div class="img_blocks">
 					 		<img src="img/target_icon.png" alt="target">
 					 	</div>
@@ -194,7 +196,7 @@
 					 </div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
-					 <div class="advantages">
+					 <div class="advantages wow zoomInUp" data-wow-offset="200" data-wow-delay="1.5s">
 					 	<div class="img_blocks">
 					 		<img src="img/shield_icon.png" alt="shield">
 					 	</div>
@@ -202,7 +204,7 @@
 					 </div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
-					 <div class="advantages">
+					 <div class="advantages wow zoomInUp" data-wow-offset="200" data-wow-delay="2s">
 					 	<div class="img_blocks">
 					 		<img src="img/draw_icon.png" alt="draw">
 					 	</div>
@@ -250,5 +252,11 @@
 			</div>
 		</div>
 	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
