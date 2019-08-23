@@ -1,0 +1,67 @@
+@import './_mixins/breakpoints'
+@import './interface'
+
+
+
++md-block()
+	.header_article__title
+			font-size: 36px
+	.vehicle_statistic
+		&__number
+		   font-size: 30px
+
+
++sm-block()
+	.header_article
+		display: flex 
+		flex-direction: column 
+		align-items: center 
+		&__title
+			text-align: center
+			font-size: 46px 
+		&__button
+			margin-top: 16px
+			margin-bottom: 30px
+	.header_bottom
+		padding-top: 2vh
+	.anchor
+		padding-top: 2vh
+	.info_description
+		&__title
+		   font-size: 60px
+		   margin-top: 21vh
+	.aa
+		display: none 
+	.vehicle_i
+		display: block 
+		text-align: center 
+	.vehicle_description
+		text-align: center 
+	.vehicle_statistic
+		justify-content: center 
+
+
++xs-block()
+	.header_logo
+		font-size: 30px
+	.header_article
+		&__title
+		   font-size: 32px
+	.info_description
+		&__title
+		   margin-top: 10vh
+		   font-size: 50px
+	.testimonials_info
+		&__title
+		   font-size: 30px
+	.form_text
+		justify-content: center
+	.form_adapt
+	    display: flex 
+	    justify-content: center 
+	    margin-bottom: 10px
+	.input_text
+	    padding: 7px 100px 7px 10px
+	.input_message
+		padding: 5px 100px 50px 10px
+
