@@ -9,7 +9,3 @@ $(function (){
     	);
     });
 });
-
-
-
-new WOW().init();
