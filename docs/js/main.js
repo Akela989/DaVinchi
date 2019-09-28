@@ -9,3 +9,12 @@ $(function (){
     	);
     });
 });
+
+
+AOS.init();
+
+
+AOS.init({
+	easing: 'ease',
+	once: true
+});
