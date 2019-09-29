@@ -44,21 +44,3 @@ $(document).mouseup(function (e) {
   }
 });
 
-
-
-$('[type="submit"]').click(function() {
-  $.post( 
-  
-  "submit.php", //url
-  
-  {
-    name: $('[name="name"]').val(),
-    email: $('[name="email"]').val()
-  }, 
-  
-  function( data ) { 
-    $( ".result" ).html(data);
-  }
-  
-  );
-});
