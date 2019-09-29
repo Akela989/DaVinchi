@@ -18,3 +18,49 @@ AOS.init({
 	easing: 'ease',
 	once: true
 });
+
+
+// Модальное окно
+
+// открыть по кнопке
+$('.header_link').click(function() { 
+  
+  $('.js-overlay-campaign').fadeIn();
+  $('.js-overlay-campaign').addClass('disabled');
+});
+
+// закрыть на крестик
+$('.js-close-campaign').click(function() { 
+  $('.js-overlay-campaign').fadeOut();
+  
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign').fadeOut();
+    
+  }
+});
+
+
+
+$('[type="button"]').click(function() {
+  $.post( 
+  
+  "submit.php", //url
+  
+  {
+    email: $('[name="email"]').val(),
+    name: $('[name="name"]').val(),
+    phone: $('[name="phone"]').val(),
+    message: $('[name="message"]').val()
+  }, 
+  
+  function( data ) { 
+    $( ".result" ).html(data);
+  }
+  
+  );
+});
