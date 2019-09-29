@@ -46,16 +46,14 @@ $(document).mouseup(function (e) {
 
 
 
-$('[type="button"]').click(function() {
+$('[type="submit"]').click(function() {
   $.post( 
   
   "submit.php", //url
   
   {
-    email: $('[name="email"]').val(),
     name: $('[name="name"]').val(),
-    phone: $('[name="phone"]').val(),
-    message: $('[name="message"]').val()
+    email: $('[name="email"]').val()
   }, 
   
   function( data ) { 
