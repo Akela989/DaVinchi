@@ -67,27 +67,30 @@ header
 .anchor
 	display: flex 
 	justify-content: center 
+	align-items: center 
+	height: 100%
 	padding-top: 8.07vh
 
 
 .overlay 
 	z-index: 100
-	position: absolute
+	position: fixed
 	width: 100%
-	height: 100vh
+	height: 100%
 	top: 0
 	left: 0
 	background-color: rgba(0, 0, 0, .8)
 	display: none
 
 .popup 
-	position: absolute
+	position: fixed
 	width: 400px
 	left: 50%
 	top: 50%
 	display: flex 
 	flex-direction: column
 	align-items: center 
+	justify-content: center 
 	transform: translate(-50%, -50%)
 	padding: 40px
 	box-sizing: border-box

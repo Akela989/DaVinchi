@@ -44,3 +44,16 @@ $(document).mouseup(function (e) {
   }
 });
 
+
+// window.onscroll = function showTopSide() {
+//   var popUp = $(".popup");
+//   var overlay = $(".overlay");
+
+//     if(window.pageYOffset > 200) {
+//        popUp.fadeOut();
+//        overlay.fadeOut();
+//     } else {
+//        popUp.fadeIn();
+//        overlay.fadeIn();
+//     }
+// }
