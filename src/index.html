@@ -15,6 +15,17 @@
 <body>
 	<header id="header">
 			<div class="header_top">
+										    	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<i class="fas fa-dove"></i>
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="email" placeholder="Почта">
+			<button type="submit" class="popup__button">
+				Отправить
+			</button>
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+	</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-6">
@@ -231,18 +242,18 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
 						<div class="form_text">
-							<input type="text" placeholder="Ваше имя" class="input_text">
+							<input type="text" name="name" placeholder="Ваше имя" class="input_text">
 				    	</div>
 				    </div>
                     <div class="col-md-6 col-sm-6">
                     	<div class="form_adapt">
-							<input type="text" placeholder="Ваша почта" class="input_text">
+							<input type="text" name="email" placeholder="Ваша почта" class="input_text">
 						</div>
 
 					</div>
                     <div class="col-md-12">
             			<div class="form_message">
-            				<input type="text" placeholder="Ваше сообщение" class="input_message"><br>
+            				<input type="text" name="message" placeholder="Ваше сообщение" class="input_message"><br>
             			</div>
                         <div class="form_button">
                         <button type="button" class="footer_button">Отправить</button>
@@ -256,6 +267,7 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c51b61aca4.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
